@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>A Quick Start for Blog Writing-Markdown</title>
+    <url>/2021/05/29/A-Quick-Start-for-Blog-Writing-Markdown/</url>
+    <content><![CDATA[<p>This post introduces some basic writing grammar of Markdown language. For easy reading, the code scripts are shown on the left and the results are presented on the right. </p>
+<p>BTW, some basic operation of hexo is also introduced in this post. Hexo is a useful tool for blog writing. I will write another post about how to deploy a github blog with hexo.</p>
+<h1 id="Title-Format"><a href="#Title-Format" class="headerlink" title="Title Format"></a>Title Format</h1><p>There are six levels of titles in total.</p>
+<p><img src="0-Title-Format.jpg" alt="Fig.0 Title Format"></p>
+<h1 id="Add-a-Code-Block"><a href="#Add-a-Code-Block" class="headerlink" title="Add a Code Block"></a>Add a Code Block</h1><p>Here some basic bash commands of hexo tool are introduced as well. </p>
+<p><img src="1-Code-Block.jpg" alt="Fig.1 Code Block: Bash of Hexo Commands"></p>
+<h1 id="Text-Highlight"><a href="#Text-Highlight" class="headerlink" title="Text Highlight"></a>Text Highlight</h1><p>Underline “__“ and “_“ are used for text highlight. </p>
+<p><img src="2-Text-Highlight.jpg" alt="Fig.2 Text Highlight: Bold and Italic"></p>
+<h1 id="Split-Line-amp-Quote"><a href="#Split-Line-amp-Quote" class="headerlink" title="Split Line&amp;Quote"></a>Split Line&amp;Quote</h1><p><img src="3-Split-Line-Quote.jpg" alt="Fig.3 Split Line and Quote"></p>
+<h1 id="Add-a-Hyperlink"><a href="#Add-a-Hyperlink" class="headerlink" title="Add a Hyperlink"></a>Add a Hyperlink</h1><p>Use “[]()“ for hyperlink.</p>
+<p><img src="4-Hyperlink.jpg" alt="Fig.4 Hyperlink"></p>
+<h1 id="Add-a-Image"><a href="#Add-a-Image" class="headerlink" title="Add a Image"></a>Add a Image</h1><p>Use “![]()“ for image. “()“ includes the image path. </p>
+<p><img src="5-Image.jpg" alt="Fig.5 Image"></p>
+<p>The image path has three types: Absolute path, Relative path, and Network path. At first I created a “my images”(see my directory structure below, with green underlined) folder in the root directory of my blog. And I set the relative path but the images did not show well. It is because the image path has some constraints. </p>
+<p><img src="6-Directory-Structure.jpg" alt="Fig.6 Directory Structure"></p>
+<p>I don’t know if it works only for hexo blog. But you can try the following method if you meet the same problem:</p>
+<h2 id="Absolute-Path"><a href="#Absolute-Path" class="headerlink" title="Absolute Path"></a>Absolute Path</h2><p>You can also see from my directory structure above, there is a folder “images” (with red underlined) in the folder “YUZehuiIC.github.io/source/“. If only a few images are used in hexo program, these images can be stored in this folder. And you can use the following markdown code to add the image:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">![The image name presented when the image cannot show well](/images/xxx.jpg)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Relative-Path"><a href="#Relative-Path" class="headerlink" title="Relative Path"></a>Relative Path</h2><p>Still from my directory structure above, there is another folder “A-Quick-Start-for-Blog-Writing-Markdown” (with blue underlined) in the folder “source/_posts”. The folder’s name is the same as this post. Images used in this post are stored in this folder and I use relative path to add images. For example, to add the first image “0-Title-Format.jpg”:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">![Fig.1 Title Format](0-Title-Format.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>This folder is generated automatically by setting “_config.yml” in the root directory:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">post_asset_folder = <span class="literal">true</span>	<span class="comment"># _config.yml</span></span><br></pre></td></tr></table></figure>
+
+<p>Then when you create a new post by bash command “hexo new post “post_title””, both “post_title.md” file and “post_title” folder will be generated. </p>
+<p>You can also create the folder manually (must be exactly the same as the post name). But the _config.yml file should also be set as above.</p>
+]]></content>
+      <categories>
+        <category>Blog Writing</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo Post Writing</title>
+    <url>/2021/05/28/My-First-Post/</url>
+    <content><![CDATA[<h1 id="Basic-Markdown"><a href="#Basic-Markdown" class="headerlink" title="Basic Markdown"></a>Basic Markdown</h1>]]></content>
+      <tags>
+        <tag>Others</tag>
+      </tags>
+  </entry>
+</search>
